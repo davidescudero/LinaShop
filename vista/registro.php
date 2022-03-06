@@ -48,18 +48,18 @@ if (isset($_SESSION['S_IDUSUARIO'])) {
 
                 <div class="wrap-input100 validate-input m-b-23" data-validate="tipo de documento es requerido">
                     <span class="label-input100">Tipo de documento</span>
-                    <input class="input100" type="text" name="username" placeholder="Escriba el tipo de documento" id="txt_usu">
+                    <input class="input100" type="text" name="username" placeholder="Escriba el tipo de documento" id="txt_tipo_documento">
                     <span class="focus-input100" data-symbol="&#xf206;"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-23" data-validate="numero de documento">
                     <span class="label-input100">numero de documento</span>
-                    <input class="input100" type="text" name="username" placeholder="Escriba el usuario numero de documento" id="txt_usu">
+                    <input class="input100" type="text" name="username" placeholder="Escriba el usuario numero de documento" id="txt_numero_documento">
                     <span class="focus-input100" data-symbol="&#xf206;"></span>
                 </div>
-                <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
+                <div class="wrap-input100 validate-input m-b-23" data-validate="Username is required">
                     <span class="label-input100">Usuario</span>
-                    <input class="input100" type="text" name="username" placeholder="Escriba el usuario" id="txt_usu">
+                    <input class="input100" type="text" name="username" placeholder="Escriba el usuario" id="txt_usuario">
                     <span class="focus-input100" data-symbol="&#xf206;"></span>
                 </div>
 
@@ -68,7 +68,7 @@ if (isset($_SESSION['S_IDUSUARIO'])) {
                     <input class="input100" type="password" name="pass" placeholder="Escriba la contrase&ntilde;a" id="txt_con">
                     <span class="focus-input100" data-symbol="&#xf190;"></span>
                 </div>
-<br>
+                <br>
                 <div class="container-login100-form-btn">
                     <div class="wrap-login100-form-btn">
                         <div class="login100-form-bgbtn"></div>
@@ -123,11 +123,11 @@ if (isset($_SESSION['S_IDUSUARIO'])) {
     <!--===============================================================================================-->
     <script src="vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
-    <script src="../js/main.js"></script>
-    <script src="../js/usuario.js"></script>
+   
+    <script src="../js/scripts.js"></script>
 
 
-    txt_usu.focus();
+    txt_tipo_documento.focus();
     </script>
 
 </html>
