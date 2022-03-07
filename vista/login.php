@@ -3,7 +3,7 @@ session_start();
 require_once("../modelo/conexion.php");
 
 if (isset($_SESSION['S_IDUSUARIO'])) {
-	header('Location:../vista/index.php');
+	header('Location:../index.html');
 }
 ?>
 
@@ -65,7 +65,7 @@ if (isset($_SESSION['S_IDUSUARIO'])) {
 				<div class="container-login100-form-btn">
 					<div class="wrap-login100-form-btn">
 						<div class="login100-form-bgbtn"></div>
-						<button class="login100-form-btn" onclick="VerificarUsuario()">
+						<button class="login100-form-btn" onclick="VerificarUsuario()" id="btn_login">
 							Entrar
 						</button>
 					</div>
@@ -94,6 +94,8 @@ if (isset($_SESSION['S_IDUSUARIO'])) {
 					</a>
 				</div>
 
+				<div id="resultado"></div>
+
 			</div>
 		</div>
 	</div>
@@ -120,8 +122,8 @@ if (isset($_SESSION['S_IDUSUARIO'])) {
 
 	<script src="../js/scripts.js"></script>
 
-
-	txt_usu.focus();
+<script>
+	txt_usuario.focus();
 	</script>
 
 </html>
